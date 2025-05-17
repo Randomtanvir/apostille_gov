@@ -11,9 +11,6 @@ const Header = () => {
         alt="Logo"
         className="mt-4 ml-4"
       />
-      <h1 className="text-xl ml-2 text-gray-950 font-semibold mt-16">
-        অ্যাপোস্টিল
-      </h1>
     </div>
   );
 };

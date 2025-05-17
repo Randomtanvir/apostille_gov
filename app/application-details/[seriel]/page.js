@@ -5,7 +5,10 @@ import ImageComponent from "./_components/ImageComponent";
 
 const SinglePage = () => {
   return (
-    <>
+    <section className="container mx-auto">
+      <h1 className="text-xl ml-2 text-gray-950 font-semibold mt-16">
+        অ্যাপোস্টিল
+      </h1>
       <div className="flex flex-col md:items-start items-center justify-start md:mt-0 -mt-80 overflow-y-hidden ">
         <div className="scale-50 sm:scale-100 inline-block">
           <div className=" p-5 border-2 border-gray-300 rounded-lg shadow-md w-[900px] flex items-center justify-center flex-col bg-white">
@@ -41,7 +44,7 @@ const SinglePage = () => {
         date="05 May 2025"
         imageUrl="https://www.mygov.bd/storage/citizenv2/2025/04/30/5cb56b830c1bd2d92c16978ca6b4ca00/1745997300.jpg"
       />
-    </>
+    </section>
   );
 };
 
