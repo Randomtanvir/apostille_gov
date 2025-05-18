@@ -1,9 +1,11 @@
+"use client";
+import Image from "next/image";
 import React from "react";
 
 const Header = () => {
   return (
     <div>
-      <img
+      <Image
         width={205}
         height={205}
         src="/header_logo.png"
