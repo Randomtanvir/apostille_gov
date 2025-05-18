@@ -120,6 +120,8 @@ export async function PATCH(request, { params }) {
         stamp: body.get("stamp") || existingApplication.stamp,
         date: body.get("date") || existingApplication.date,
         signDate: body.get("signDate") || existingApplication.signDate,
+        time: body.get("time") || existingApplication.time,
+        footerDate: body.get("footerDate") || existingApplication.footerDate,
         QRcode: QRcodeUrl,
         image: imageArray,
       };

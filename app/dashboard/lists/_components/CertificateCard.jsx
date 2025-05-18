@@ -64,7 +64,7 @@ const CertificateCard = ({ application }) => {
             href={`/application-details/${application?._id}`}
             className="text-lg font-semibold text-blue-600 hover:underline"
           >
-            {application?.country}
+            {application?.signed} , {application?.country}
           </Link>
 
           <p className="text-sm text-gray-500">

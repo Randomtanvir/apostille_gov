@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { Plus, List, QrCode } from "lucide-react";
+import { Plus, List } from "lucide-react";
 
 const DashboardPage = () => {
   return (

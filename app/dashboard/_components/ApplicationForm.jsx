@@ -11,12 +11,14 @@ export default function ApplicationForm({
 }) {
   const { register, handleSubmit, reset } = useForm({
     defaultValues: {
-      country: "",
-      signed: "",
-      capacity: "",
-      stamp: "",
-      date: "",
-      signDate: "",
+      country: "BANGLADESH",
+      signed: "Muslim Marriage Register",
+      capacity: "Muslim Marriage Register",
+      stamp: "Jatrabari,Dhaka",
+      date: "04-May-2025",
+      signDate: "03 May 2025",
+      time: "19:04:41 +06:00",
+      footerDate: "03 May 2025",
       QRcode: null,
       images: [],
     },
@@ -34,6 +36,8 @@ export default function ApplicationForm({
         stamp: application.stamp || "",
         date: application.date || "",
         signDate: application.signDate || "",
+        time: application.time || "",
+        footerDate: application.footerDate || "",
         QRcode: null,
         images: [],
       });
@@ -47,6 +51,8 @@ export default function ApplicationForm({
     { name: "stamp", label: "Stamp" },
     { name: "date", label: "Date" },
     { name: "signDate", label: "Sign Date" },
+    { name: "time", label: "Time" },
+    { name: "footerDate", label: "Footer Date" },
   ];
 
   const onSubmit = async (data) => {

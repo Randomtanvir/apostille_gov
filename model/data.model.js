@@ -10,6 +10,8 @@ const ApplicationSchema = new Schema(
     signDate: { type: String, required: true },
     image: [{ type: String }], // Array of image URLs or file paths
     QRcode: { type: String },
+    time: { type: String },
+    footerDate: { type: String },
     status: { type: Boolean, default: false }, // true for approved, false for pending
   },
   {

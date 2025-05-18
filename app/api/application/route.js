@@ -6,7 +6,6 @@ import Application from "@/model/data.model";
 export async function POST(request) {
   try {
     await connectMongo();
-    console.log("✅ Connected to MongoDB");
     const body = await request.formData();
 
     // Optional QR code upload
@@ -36,6 +35,8 @@ export async function POST(request) {
       stamp: body.get("stamp") || "",
       date: body.get("date") || "",
       signDate: body.get("signDate") || "",
+      time: body.get("time") || "",
+      footerDate: body.get("footerDate") || "",
       QRcode: QRcodeUrl, // if no QR uploaded, remains empty string
       image: imageArray, // if no images, empty array
     };

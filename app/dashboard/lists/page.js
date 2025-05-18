@@ -6,8 +6,8 @@ const ListsPage = async () => {
   const appli = await getAllApplications();
   return (
     <div>
-      {appli?.applications.length > 0 &&
-        appli?.applications.map((application) => (
+      {appli?.applications?.length > 0 &&
+        appli?.applications?.map((application) => (
           <CertificateCard key={application._id} application={application} />
         ))}
     </div>
