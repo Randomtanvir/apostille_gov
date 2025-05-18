@@ -15,6 +15,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "apostillemygovbd.vercel.app",
       },
+      {
+        protocol: "https",
+        hostname: "apostille.mygov.bd",
+      },
     ],
   },
 };

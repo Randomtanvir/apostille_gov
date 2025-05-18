@@ -8,7 +8,7 @@ const Header = () => {
       <Image
         width={205}
         height={205}
-        src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/header_logo.png`}
+        src={`https://apostille.mygov.bd/build/assets/myGov-Apostille-Logo-version-5.0-01-lBppngK5.png`}
         alt="Logo"
         className="mt-4 ml-4"
       />
