@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import logo from "/public/header_logo.png";
 
 const Header = () => {
   return (
@@ -7,7 +8,7 @@ const Header = () => {
       <Image
         width={205}
         height={205}
-        src="/header_logo.png"
+        src={logo}
         alt="Logo"
         className="mt-4 ml-4"
       />
