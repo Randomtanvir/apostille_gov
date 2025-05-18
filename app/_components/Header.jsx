@@ -8,7 +8,7 @@ const Header = () => {
       <Image
         width={205}
         height={205}
-        src="/header_logo.png"
+        src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/header_logo.png`}
         alt="Logo"
         className="mt-4 ml-4"
       />
