@@ -25,7 +25,7 @@ const LoginForm = () => {
           <Image
             width={200}
             height={200}
-            src={process.env.NEXT_PUBLIC_IMAGE_URL + "/header_logo.png"}
+            src="https://apostillemygovbd.vercel.app/header_logo.png"
             alt="myGov Logo"
             className="h-16 w-auto"
           />
