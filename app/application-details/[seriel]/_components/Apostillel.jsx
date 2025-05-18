@@ -1,6 +1,6 @@
 import React from "react";
 
-const Apostillel = () => {
+const Apostillel = ({ application }) => {
   return (
     <section className="flex relative justify-center min-w-[1280px] items-center font-serif py-8">
       <div className="p-6 relative border rounded-lg shadow-lg bg-gray-50">
@@ -25,7 +25,9 @@ const Apostillel = () => {
               <li>
                 <span className="font-sans font-bold">1.</span>
                 <span className="ml-1">Country: </span>
-                <span className="font-bold ml-1  text-black">BANGLADESH</span>
+                <span className="font-bold ml-1  text-black">
+                  {application?.country}
+                </span>
               </li>
 
               <li className="list-none">The public document</li>
@@ -35,7 +37,7 @@ const Apostillel = () => {
                   has been signed by:
                 </span>
                 <span className="font-bold ml-1 text-gray-800 text-sm">
-                  Muslim Marriage Register
+                  {application?.signed}
                 </span>
               </li>
               <li>
@@ -44,7 +46,7 @@ const Apostillel = () => {
                   acting in the capacity of:
                 </span>
                 <span className="font-bold ml-1 text-gray-600 text-sm">
-                  Muslim Marriage Register
+                  {application?.capacity}
                 </span>
               </li>
               <li>
@@ -53,7 +55,7 @@ const Apostillel = () => {
                   bears the seal/stamp of:
                 </span>
                 <span className="font-bold ml-1 text-gray-600 text-sm">
-                  Jatrabari, Dhaka
+                  {application?.stamp}
                 </span>
               </li>
             </ul>
@@ -138,7 +140,11 @@ const Apostillel = () => {
           </div>
 
           <div className="qr-code flex justify-end items-end text-right -mt-10 ">
-            <img src="/qrcode.png" alt="QR Code" className="w-36 h-auto" />
+            <img
+              src={application?.QRcode}
+              alt="QR Code"
+              className="w-36 h-auto"
+            />
           </div>
         </div>
       </div>
