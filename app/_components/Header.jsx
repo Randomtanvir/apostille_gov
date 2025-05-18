@@ -7,7 +7,7 @@ const Header = () => {
       <Image
         width={205}
         height={205}
-        src={process.env.NEXT_PUBLIC_IMAGE_URL + "/header_logo.png"}
+        src="https://res.cloudinary.com/dlz30x9zm/image/upload/v1747560716/QRcode/qku1qrnkbnuzfbgaip3u.png"
         alt="Logo"
         className="mt-4 ml-4"
       />

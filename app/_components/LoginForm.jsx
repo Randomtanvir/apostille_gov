@@ -25,7 +25,7 @@ const LoginForm = () => {
           <Image
             width={200}
             height={200}
-            src="/header_logo.png"
+            src="https://res.cloudinary.com/dlz30x9zm/image/upload/v1747560716/QRcode/qku1qrnkbnuzfbgaip3u.png"
             alt="myGov Logo"
             className="h-16 w-auto"
           />
