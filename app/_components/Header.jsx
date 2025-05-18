@@ -1,13 +1,12 @@
-import Image from "next/image";
 import React from "react";
 
 const Header = () => {
   return (
     <div>
-      <Image
+      <img
         width={205}
         height={205}
-        src="https://apostillemygovbd.vercel.app/header_logo.png"
+        src="/header_logo.png"
         alt="Logo"
         className="mt-4 ml-4"
       />

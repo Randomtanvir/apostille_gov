@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import React, { useState } from "react";
 
 const LoginForm = () => {
@@ -22,10 +21,8 @@ const LoginForm = () => {
       <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
         {/* Logo */}
         <div className="flex justify-center mb-6">
-          <Image
-            width={200}
-            height={200}
-            src="https://apostillemygovbd.vercel.app/header_logo.png"
+          <img
+            src="/header_logo.png"
             alt="myGov Logo"
             className="h-16 w-auto"
           />
