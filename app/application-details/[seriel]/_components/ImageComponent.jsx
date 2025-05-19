@@ -9,7 +9,7 @@ const ImageComponent = ({ date, imageUrl }) => {
       <div className="mt-6">
         <div className="flex text-[#581c87] flex-col items-center justify-center">
           <p className="font-belgique text-lg">Attested</p>
-          <img src="https://apostille.mygov.bd/storage/profile/613/675e845291aec-2024-12-15-signature.png" />
+          <img src="/imgsigniture.png" />
           <p className="">{date}</p>
           <p className="mt-2">Tapash Kumar Bhowmik</p>
           <p>Assistant Secretary</p>
