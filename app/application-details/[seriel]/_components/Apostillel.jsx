@@ -71,29 +71,28 @@ const Apostillel = ({ application }) => {
                 <span className="font-sans font-bold">5.</span>
                 <span className="ml-1">at </span>
                 <span className="font-bold ml-1 underline text-black">
-                  Dhaka, Bangladesh
+                  {application?.at}
                 </span>
               </li>
               <li>
                 <span className="font-sans font-bold">6.</span>
                 <span className="ml-1">the </span>
                 <span className="font-bold ml-1 underline text-black">
-                  04-May-2025
+                  {application?.date}
                 </span>
               </li>
               <li>
                 <span className="font-sans font-bold">7.</span>
                 <span className="ml-1">by </span>
                 <span className="font-bold ml-1 underline text-black">
-                  Md. Shoaib-Ul-Islam Tarafder, Senior Assistant Secretary,
-                  Ministry of Foreign Affairs
+                  {application?.by}
                 </span>
               </li>
               <li>
                 <span className="font-sans font-bold mb-5">8.</span>
                 <span className="ml-1">No </span>
                 <span className="font-bold ml-1 font-sans text-black">
-                  3684205971
+                  {application?.number}
                 </span>
               </li>
               <li className="font-bold">

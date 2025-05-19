@@ -122,6 +122,9 @@ export async function PATCH(request, { params }) {
         signDate: body.get("signDate") || existingApplication.signDate,
         time: body.get("time") || existingApplication.time,
         footerDate: body.get("footerDate") || existingApplication.footerDate,
+        at: body.get("at") || existingApplication.at,
+        by: body.get("by") || existingApplication.by,
+        number: body.get("number") || existingApplication.number,
         QRcode: QRcodeUrl,
         image: imageArray,
       };

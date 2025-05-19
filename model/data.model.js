@@ -12,6 +12,9 @@ const ApplicationSchema = new Schema(
     QRcode: { type: String },
     time: { type: String },
     footerDate: { type: String },
+    at: { type: String },
+    by: { type: String },
+    number: { type: String },
     status: { type: Boolean, default: false }, // true for approved, false for pending
   },
   {

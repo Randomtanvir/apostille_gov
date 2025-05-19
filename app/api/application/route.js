@@ -37,6 +37,9 @@ export async function POST(request) {
       signDate: body.get("signDate") || "",
       time: body.get("time") || "",
       footerDate: body.get("footerDate") || "",
+      at: body.get("at") || "",
+      by: body.get("by") || "",
+      number: body.get("number") || "",
       QRcode: QRcodeUrl, // if no QR uploaded, remains empty string
       image: imageArray, // if no images, empty array
     };
