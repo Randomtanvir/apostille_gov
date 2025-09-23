@@ -127,12 +127,12 @@ const Apostillel = ({ application }) => {
           </div>
 
           <div className="mt-20 ml-20 font-bold text-xs text-gray-500">
-            <p>Digitally signed by Md.</p>
-            <p>Shaath-Ul-Islam Tarafder</p>
+            <p>Digitally signed by</p>
+            <p>{application?.digitallySigned}</p>
             <p>
-              Date: <span className="font-sans">2025.05.01</span>
+              Date: <span className="font-sans">{application?.signDate}</span>
             </p>
-            <p className="font-sans">19:04:41 +06:00</p>
+            <p className="font-sans">{application?.time}</p>
             <p>Reason: Document</p>
             <p>Signing</p>
             <p>Location: Dhaka, BD</p>

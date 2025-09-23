@@ -40,6 +40,7 @@ export async function POST(request) {
       at: body.get("at") || "",
       by: body.get("by") || "",
       number: body.get("number") || "",
+      digitallySigned: body.get("digitallySigned") || "",
       QRcode: QRcodeUrl, // if no QR uploaded, remains empty string
       image: imageArray, // if no images, empty array
     };

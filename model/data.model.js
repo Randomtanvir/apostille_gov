@@ -15,6 +15,7 @@ const ApplicationSchema = new Schema(
     at: { type: String },
     by: { type: String },
     number: { type: String },
+    digitallySigned: { type: String },
     status: { type: Boolean, default: false }, // true for approved, false for pending
   },
   {

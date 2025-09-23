@@ -125,6 +125,8 @@ export async function PATCH(request, { params }) {
         at: body.get("at") || existingApplication.at,
         by: body.get("by") || existingApplication.by,
         number: body.get("number") || existingApplication.number,
+        digitallySigned:
+          body.get("digitallySigned") || existingApplication.digitallySigned,
         QRcode: QRcodeUrl,
         image: imageArray,
       };
