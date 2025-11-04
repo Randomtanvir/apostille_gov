@@ -1,6 +1,7 @@
 import connectMongo from "@/db/db";
 import Application from "@/model/data.model";
 import { uploadToCloudinary } from "@/utils/cloudinary";
+import { getCurrentTimeString } from "@/utils/randomString";
 import { NextResponse } from "next/server";
 
 export async function GET(request, { params }) {
@@ -107,7 +108,10 @@ export async function PATCH(request, { params }) {
       if (imageFiles.length > 0) {
         imageArray = await Promise.all(
           imageFiles.map(async (file) => {
-            const url = await uploadToCloudinary(file, "Application");
+            const url = await uploadToCloudinary(
+              file,
+              `Application: ${getCurrentTimeString()}`
+            );
             return url;
           })
         );

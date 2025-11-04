@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import React from "react";
 import toast from "react-hot-toast";
 
-const CertificateCard = ({ application }) => {
+const CertificateCard = ({ application, index }) => {
   const router = useRouter();
 
   const handleDelete = async (value) => {
@@ -59,6 +59,9 @@ const CertificateCard = ({ application }) => {
   return (
     <div className="flex flex-col items-center justify-center gap-2">
       <div className="p-4 w-full max-w-xl border rounded-lg shadow flex justify-between items-center bg-white hover:shadow-lg transition">
+        <span className="text-xl text-green-400 mr-4 font-bold">
+          {index + 1}
+        </span>
         <div>
           <Link
             href={`/application-details/${application?._id}`}

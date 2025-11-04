@@ -15,10 +15,10 @@ export default function ApplicationForm({
       signed: "Muslim Marriage Register",
       capacity: "Muslim Marriage Register",
       stamp: "Jatrabari,Dhaka",
-      date: "04-May-2025",
-      signDate: "2025.05.01",
+      date: "04-Oct-2025",
+      signDate: "2025.10.01",
       time: "19:04:41 +06:00",
-      footerDate: "03 May 2025",
+      footerDate: "03 Oct 2025",
       at: "Dhaka, Bangladesh",
       by: "Md. Shoaib-Ul-Islam Tarafder, Senior Assistant Secretary, Ministry of Foreign Affairs",
       number: "3684205971",
@@ -116,7 +116,7 @@ export default function ApplicationForm({
   if (loading) {
     return (
       <div className="flex justify-center items-center h-screen">
-        <div className="loader">Loading...</div>
+        <div className="loader"></div>
       </div>
     );
   }
