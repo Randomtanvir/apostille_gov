@@ -15,13 +15,13 @@ export default function ApplicationForm({
       signed: "Muslim Marriage Register",
       capacity: "Muslim Marriage Register",
       stamp: "Jatrabari,Dhaka",
-      date: "04-Oct-2025",
-      signDate: "2025.10.01",
-      time: "19:04:41 +06:00",
-      footerDate: "03 Oct 2025",
+      date: "02-Mar-2026",
+      signDate: "2026.02.02",
+      time: "19:13:25 +06:00",
+      footerDate: "02 Mar 2026",
       at: "Dhaka, Bangladesh",
       by: "Md. Shoaib-Ul-Islam Tarafder, Senior Assistant Secretary, Ministry of Foreign Affairs",
-      number: "3684205971",
+      number: "3684243871",
       digitallySigned: "Md. Shoaib-Ul-Islam Tarafder",
       QRcode: null,
       images: [],
@@ -90,7 +90,7 @@ export default function ApplicationForm({
         {
           method: editMode ? "PATCH" : "POST",
           body: formData,
-        }
+        },
       );
 
       const result = await res.json();
@@ -99,7 +99,7 @@ export default function ApplicationForm({
         toast.success(
           editMode
             ? "Application updated successfully!"
-            : "Application submitted successfully!"
+            : "Application submitted successfully!",
         );
         router.push("/dashboard/lists");
       } else {
